@@ -1,0 +1,12 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+AuthUserFile /home/u719463746/public_html/trading/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Please enter your ID and password"
+AuthType Basic
+require valid-user
+order deny,allow
+# Displaying PHP errors
+php_flag display_errors on
+php_value error_reporting 6143
